@@ -1,0 +1,129 @@
+.music-card__container ol {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  list-style: none;
+}
+
+.music-card__container ol li {
+  align-items: center;
+  counter-increment: my-awesome-counter;
+  display: flex;
+  font-size: 1.1rem;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.music-card__container ol li:before {
+  color: var(--color-dark);
+  content: counter(my-awesome-counter) '. ';
+  font-weight: 400;
+}
+
+.music-card__container ol li::marker {
+  color: var(--color-dark);
+}
+
+.player__container {
+  display: flex;
+  margin-left: auto;
+  padding-left: 2rem;
+  width: 16rem;
+}
+
+audio {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50px;
+  height: 1.6rem;
+  text-align: right;
+  width: 16rem;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(100, 100, 100);
+}
+
+audio::-webkit-media-controls-timeline {
+  visibility: hidden;
+}
+
+.checkbox__container label {
+  color: rgb(128, 128, 128, 0.99);
+  font-size: 0.9rem;
+  padding-left: 0.4rem;
+}
+
+.music-card__container ol li label {
+  text-align: right;
+}
+
+.music-card__container ol li input {
+  text-align: right;
+}
+
+.checkbox__container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and ( max-width : 900px ) {
+
+  .music-card__container ol li {
+    display: inline;
+    padding-top: 1.6rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .music-card__container ol li:before {
+    content: '';
+  }
+
+  .player__container {
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0 auto;
+  }
+
+  .checkbox__container label, .checkbox__container input {
+    margin-top: 10px;
+  }
+
+  .music-card__container ol li label {
+    text-align: center;
+  }
+
+  .music-card__container ol li input {
+    text-align: center;
+  }
+
+  .checkbox__container {
+    display: inline;
+  }
+
+}
+
+@media only screen and ( max-width : 280px ) {
+
+  .music-card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .player__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  audio {
+    width: 12.5rem;
+  }
+
+}

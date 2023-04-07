@@ -1,0 +1,124 @@
+.header {
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  color: white;
+  display: flex;
+  font-family: var(--font-tunes);
+  justify-content: space-between;
+  padding-block: 0.5rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header a {
+  color: white;
+  opacity: 0.5;
+  position: relative;
+  text-decoration: none;
+}
+
+.header a:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.header a:before {
+  border-bottom: 1px solid var(--color-accent);
+  content: '';
+  left: 0;
+  padding-bottom: 1.7rem;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  visibility: hidden;
+  width: 0;
+}
+
+.header a:hover:before {
+  border-bottom: 1px solid var(--color-accent);
+  visibility: visible;
+  width: 102%;
+}
+
+.header-logo__container {
+  align-items: center;
+  color: var(--color-accent);
+  display: flex;
+  font-family: var(--font-trybe);
+  font-size: 1.1rem;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+.header-logo__container span {
+  color: white;
+  font-family: var(--font-tunes);
+  font-size: 1.6rem;
+}
+
+.header-logo__container img {
+  width: 50px;
+}
+
+.nav__container {
+  margin-right: auto;
+}
+
+.nav__container nav {
+  align-items: center;
+  display: flex;
+  font-size: 1.15rem;
+  font-weight: 500;
+  gap: 3rem;
+}
+
+.username__container {
+  align-items: center;
+  color: var(--color-accent);
+  display: flex;
+  gap: 0.2rem;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+.separator {
+  background-color: rgba(43, 149, 101, 0.3);
+  border-radius: 50px;
+  height: 30px;
+  margin-inline: 3rem;
+  width: 1px;
+}
+
+.about {
+  margin-inline: 0;
+}
+
+.nav-icon {
+  color: var(--color-accent);
+  padding-right: 0.1rem;
+  transform: translateY(0.25rem);
+  width: 1rem;
+}
+
+@media only screen and ( max-width : 900px ) {
+
+  .header {
+    padding-block: 0.8rem;
+  }
+
+  .nav__container, .separator {
+    display: none;
+  }
+
+  .header-logo__container img {
+    width: 30px;
+  }
+
+  .username__container {
+    display: none;
+  }
+
+  .header {
+    border-bottom: none;
+  }
+}

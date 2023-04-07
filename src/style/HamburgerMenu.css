@@ -1,0 +1,128 @@
+.icon {
+  height: 44px;
+  position: fixed;
+  right: 3%;
+  width: fit-content;
+  z-index: 4;
+}
+
+.hamburger {
+  background-color: var(--color-accent);
+  height: 3px;
+  position: absolute;
+  right: 0;
+  top: 58%;
+  transition: 0.5s;
+  width: 24px;
+}
+
+.hamburger:after, .hamburger:before {
+  background-color: var(--color-accent);
+  content: '';
+  height: 3px;
+  position: absolute;
+  right: 0;
+  transition: 0.5s;
+  width: 30px;
+}
+
+.hamburger:before {
+  top: -10px;
+}
+
+.hamburger:after {
+  top: 10px;
+}
+
+.list {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: var(--font-tunes);
+  font-size: 3rem;
+  font-weight: 500;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.list .listItems {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+
+}
+
+.list .listItems > li {
+  margin: 2px 8px;
+}
+
+.list .listItems li {
+  margin-block: 6rem;
+  position: relative;
+}
+
+.list .listItems li:before {
+  border-left: 2px solid var(--color-dark);
+  border-radius: 10px;
+  bottom: -7%;
+  content: '';
+  display: block;
+  height: 100%;
+  margin-left: -20px;
+  position: absolute;
+  width: 100%;
+}
+
+.icon.iconActive .hamburger {
+  background-color: transparent;
+}
+
+.icon.iconActive .hamburger:after, .icon.iconActive .hamburger:before {
+  background-color: white;
+  top: 0;
+  transition: all 0.4s;
+}
+
+.icon.iconActive .hamburger:after {
+  transform: rotate(225deg);
+}
+
+.icon.iconActive .hamburger:before {
+  transform: rotate(135deg);
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  transition: 0.4s ease-out;
+  width: 100dvw;
+  z-index: 1;
+}
+
+.menu.menuOpen {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100dvh;
+  opacity: 100%;
+  transition: all 0.5s;
+  visibility: visible;
+  width: 100%;
+}
+
+.menu.menuClose {
+  opacity: 1%;
+  transition: all 0.4s;
+  visibility: hidden;
+  width: 0;
+}
+
+@media only screen and ( min-width : 900px ) {
+
+  .icon {
+    display: none;
+    visibility: hidden;
+  }
+}

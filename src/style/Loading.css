@@ -1,0 +1,8 @@
+.loader__container {
+  display: flex;
+  justify-content: center;
+}
+
+.loader__container p {
+  display: none;
+}
