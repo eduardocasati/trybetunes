@@ -1,6 +1,6 @@
 # TrybeTunes
 
-> Este projeto foi desenvolvido na **Seção 4 - Ciclo de Vida de Componentes React e React Router** do **Módulo de Front-end** da Formação em Desenvolvimento Web pela <a href="https://www.betrybe.com/" target="_blank">Trybe</a>.
+> Este projeto foi desenvolvido na **Seção 4 - Ciclo de Vida de Componentes React e React Router** do **Módulo de Front-end** da Formação em Desenvolvimento Web pela [Trybe](https://www.betrybe.com/){:target="\_blank"}.
 
 - URL do projeto: <a href="https://trybetunes-ec.vercel.app/" target="_blank">https://trybetunes-ec.vercel.app/</a>
 
