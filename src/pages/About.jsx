@@ -25,14 +25,15 @@ export default class About extends Component {
             </a>
           </p>
           <div className="social-icons">
-            <a href="https://github.com/eduardocasati" target="_blank">
-              <BsGithub className="github-icon" />
-            </a>
             <a
-              href="https://www.linkedin.com/in/eduardo-casati/"
+              href="https://github.com/eduardocasati"
               target="_blank"
+              className="github-icon"
             >
-              <BsLinkedin className="linkedin-icon" />
+              <BsGithub /> <span>GitHub</span>
+            </a>
+            <a href="#" className="linkedin-icon">
+              <BsLinkedin /> <span>LinkedIn</span>
             </a>
           </div>
           <div className="technologies">
