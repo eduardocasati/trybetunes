@@ -2,7 +2,7 @@
 
 > Este projeto foi desenvolvido na **Seção 4 - Ciclo de Vida de Componentes React e React Router** do **Módulo de Front-end** da Formação em Desenvolvimento Web pela [Trybe](https://www.betrybe.com/).
 
-- _URL do projeto_ [trybetunes.com](#)
+- URL do projeto: [https://trybetunes-ec.vercel.app/](https://trybetunes-ec.vercel.app/)
 
 ---
 
