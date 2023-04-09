@@ -12,12 +12,12 @@
 
 Este projeto foi desenvolvido para o estudo e a avaliação dos seguintes conhecimentos:
 
-- Requisição e consumo de dados vindos de uma API ([iTunes](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html));
-- Utilização do Local Storage.
 - Ciclos de vida de componentes React;
 - Uso de Rotas Dinâmicas do React Router;
 - Manipulação do Estado de componentes React;
 - Renderização condicional;
+- Requisição e consumo de dados vindos de uma API ([iTunes](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html));
+- Utilização do Local Storage.
 
 ## Autor
 
