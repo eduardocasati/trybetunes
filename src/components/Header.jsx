@@ -1,14 +1,14 @@
 import React from 'react';
+import { BsPerson, BsPersonSquare, BsSearch, BsStar } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import { BsSearch, BsPerson, BsStar, BsPersonSquare, BsInfoCircle } from 'react-icons/bs';
 
-import '../style/Header.css';
 import logo from '../assets/logo_transparent.svg';
+import '../style/Header.css';
 
 import { getUser } from '../services/userAPI';
 
-import Loading from './Loading';
 import HamburgerMenu from './HamburgerMenu';
+import Loading from './Loading';
 
 class Header extends React.Component {
   constructor() {
@@ -32,7 +32,7 @@ class Header extends React.Component {
         <HamburgerMenu />
         <header className="header">
           <div className="header-logo__container">
-            <img src={ logo } alt="TrybeTunes Logo" />
+            <img src={logo} alt="TrybeTunes Logo" />
             <p>
               TRYBE
               <span>Tunes</span>
@@ -65,15 +65,6 @@ class Header extends React.Component {
                 <BsPersonSquare className="nav-icon" />
                 {' '}
                 Perfil
-              </Link>
-              <div className="separator about" />
-              <Link
-                to="/about"
-                className="nav-links"
-              >
-                <BsInfoCircle className="nav-icon" />
-                {' '}
-                Sobre
               </Link>
             </nav>
           </div>

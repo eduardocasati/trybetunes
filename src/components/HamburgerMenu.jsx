@@ -26,9 +26,6 @@ export default function HamburgerMenu() {
               <Link to="/profile" onClick={toggleMode}>
                 <li>Perfil</li>
               </Link>
-              <Link to="/about" onClick={toggleMode}>
-                <li>Sobre</li>
-              </Link>
             </ul>
           </nav>
         </div>
